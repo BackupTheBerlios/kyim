@@ -1,0 +1,132 @@
+<!DOCTYPE UI><UI>
+<class>AddedMessage</class>
+<widget>
+    <class>QDialog</class>
+    <property stdset="1">
+        <name>name</name>
+        <cstring>AddedMessage</cstring>
+    </property>
+    <property stdset="1">
+        <name>geometry</name>
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>491</width>
+            <height>147</height>
+        </rect>
+    </property>
+    <property stdset="1">
+        <name>caption</name>
+        <string>You have been added !</string>
+    </property>
+    <widget>
+        <class>QPushButton</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>OK</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>20</x>
+                <y>90</y>
+                <width>114</width>
+                <height>33</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>Ok</string>
+        </property>
+    </widget>
+    <widget>
+        <class>QPushButton</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>AcceptAdd</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>190</x>
+                <y>90</y>
+                <width>135</width>
+                <height>33</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>Accept And Add</string>
+        </property>
+    </widget>
+    <widget>
+        <class>QPushButton</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>viewProfile</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>370</x>
+                <y>90</y>
+                <width>114</width>
+                <height>33</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>View Profile</string>
+        </property>
+    </widget>
+    <widget>
+        <class>QLabel</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>message</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>10</x>
+                <y>30</y>
+                <width>470</width>
+                <height>21</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string></string>
+        </property>
+        <property stdset="1">
+            <name>alignment</name>
+            <set>AlignCenter</set>
+        </property>
+        <property>
+            <name>hAlign</name>
+        </property>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>AcceptAdd</sender>
+        <signal>clicked()</signal>
+        <receiver>AddedMessage</receiver>
+        <slot>acceptAdd()</slot>
+    </connection>
+    <connection>
+        <sender>viewProfile</sender>
+        <signal>clicked()</signal>
+        <receiver>AddedMessage</receiver>
+        <slot>profile()</slot>
+    </connection>
+    <connection>
+        <sender>OK</sender>
+        <signal>clicked()</signal>
+        <receiver>AddedMessage</receiver>
+        <slot>accept()</slot>
+    </connection>
+    <slot access="public">acceptAdd()</slot>
+    <slot access="public">profile()</slot>
+</connections>
+</UI>

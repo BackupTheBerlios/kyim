@@ -1,0 +1,240 @@
+<!DOCTYPE UI><UI version="3.1" stdsetdef="1">
+<class>ConferenceWindow</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>ConferenceWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>548</width>
+            <height>381</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Form2</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>11</number>
+        </property>
+        <property name="spacing">
+            <number>6</number>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>Layout3</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <widget class="KTextBrowser">
+                    <property name="name">
+                        <cstring>text</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>7</hsizetype>
+                            <vsizetype>7</vsizetype>
+                            <horstretch>100</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="cursor">
+                        <cursor>0</cursor>
+                    </property>
+                </widget>
+                <widget class="QListBox">
+                    <property name="name">
+                        <cstring>actionsList</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>7</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                </widget>
+                <widget class="QListBox">
+                    <property name="name">
+                        <cstring>userList</cstring>
+                    </property>
+                    <property name="selectionMode">
+                        <enum>NoSelection</enum>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget" row="2" column="0">
+            <property name="name">
+                <cstring>Layout2</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>inviteBuddy</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Invite Another Buddy</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>Spacer1</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>quitButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Leave Conference</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget" row="1" column="0">
+            <property name="name">
+                <cstring>layout5</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QTextEdit" row="0" column="0">
+                    <property name="name">
+                        <cstring>enteredText</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>0</width>
+                            <height>10</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>60</height>
+                        </size>
+                    </property>
+                </widget>
+                <widget class="QLayoutWidget" row="1" column="0">
+                    <property name="name">
+                        <cstring>layout4</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer2</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>360</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>sendButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Send Message</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>sendButton</sender>
+        <signal>clicked()</signal>
+        <receiver>ConferenceWindow</receiver>
+        <slot>newMessage()</slot>
+    </connection>
+    <connection>
+        <sender>quitButton</sender>
+        <signal>clicked()</signal>
+        <receiver>ConferenceWindow</receiver>
+        <slot>quitPressed()</slot>
+    </connection>
+    <connection>
+        <sender>inviteBuddy</sender>
+        <signal>clicked()</signal>
+        <receiver>ConferenceWindow</receiver>
+        <slot>invitePressed()</slot>
+    </connection>
+    <connection>
+        <sender>actionsList</sender>
+        <signal>doubleClicked(QListBoxItem*)</signal>
+        <receiver>ConferenceWindow</receiver>
+        <slot>actionClicked(QListBoxItem*)</slot>
+    </connection>
+    <connection>
+        <sender>enteredText</sender>
+        <signal>returnPressed()</signal>
+        <receiver>ConferenceWindow</receiver>
+        <slot>textPressed()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="global" impldecl="in declaration">ktextbrowser.h</include>
+</includes>
+<slots>
+    <slot>invitePressed()</slot>
+    <slot>newMessage()</slot>
+    <slot>actionClicked(QListBoxItem*)</slot>
+    <slot>quitPressed()</slot>
+    <slot>textPressed()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>ktextbrowser.h</includehint>
+</includehints>
+</UI>

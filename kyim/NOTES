@@ -1,0 +1,27 @@
+This notes are intended at developers
+=====================================
+
+
+Offline Messages
+================
+A new code was added to handle sending of offline messages, thanx to a patch from Ankit.
+The behaviour of that patch, is to send an offline message when a user isnot marked as online in the buddylist. In fact, this can be problematic, since on the yahoo servers, the buddylist are often not refreshed properly.
+However, when they're working properly, the global behaviour is better.
+But, as soon as libyahoo is fixed to work properly, maybe with newer protocol, this behaviour should be re-examined.
+Here's the patch that was applied to ChatSession.cpp (new is "<", old is ">"):
+<
+<   BuddyStatus *status = main_window->getBuddyStatus((char*)((const char*)to));
+<   if(status->available())
+<       yahoo_cmd_msg(context, (const char*)main_window->current_user(),
+---
+>
+>   yahoo_cmd_msg(context, (const char*)main_window->current_user(),
+87,92d83
+<   else
+<       {
+<          _chatWindow->appendMessage("User not online. Sent as an offline message.",(const char*)to);
+<          yahoo_cmd_msg_offline(context,(const char*)main_window->current_user(),
+<               (const char*)to,(const char*)msg);
+<       }
+
+

@@ -1,0 +1,202 @@
+
+<!doctype linuxdoc system>
+<article>
+<title>The KYahoo Handbook
+<author>Jay Lubomirski <tt>jaylubo@fiam.net</tt>
+<date>Version 0.7, Fri May  4 23:01:58 EDT 2001
+<abstract>
+This Handbook describes KYahoo Version 0.7
+</abstract>
+
+<toc>
+
+<sect>Introduction
+<p>
+<sect1>Changes
+<p>
+<itemize>
+<item>Added support for HTTP and HTTP PROXY connections modes.
+<item>Added file transfer support. 
+<item>Added support for emoticons in chat windows.
+<item>Rewrote the chat message font and color parsing.
+</itemize>
+
+<sect>Installation
+<p>
+<sect1>How to obtain KYahoo 
+<p>
+KYahoo is available for download from the KYahoo web page, 
+<htmlurl url="http://kyahoo.sourceforge.net" name = "kyahoo.sourceforge.net">.
+
+<sect1>Requirements
+<p>
+KYahoo requires KDE version 2.x and Qt version 2.x.
+
+<sect1>Compilation and installation
+<p>
+
+In order to compile and install KYahoo on your system, type the following in
+the base directory of the KYahoo distribution:
+
+<tscreen><verb>
+% ./configure
+% make
+% make install
+</verb></tscreen>
+
+<p>
+Since KYahoo uses <verb>autoconf</verb> you should have not trouble
+compiling it.
+Should you run into problems please report them to the the author at 
+<htmlurl url="mailto:jaylubo@fiam.net" name = "Jay Lubomirski">
+
+
+<p>
+<sect> Usage <p>
+<sect1> General Usage
+<p>
+KYahoo is designed to work like the Official Yahoo
+Messenger. Information on that and creating pager accounts is
+available at Yahoo's <htmlurl url="http://members.yahoo.com" name =
+"site">. 
+<p>
+<sect1> Menus
+<p>
+File
+<itemize>
+<item><em>Options</em><p>
+ This is the configuration dialog. You can enter your login and
+ password with this option. 
+ The configuration is only available when you are not logged into the
+ pager. 
+<item><em>Save Options</em><p>
+ This option will be highlighted when changes have been made after
+ closing the configuration dialog. If you don't save options right
+ away they will be automatically done when you close KYahoo. 
+<item><em>Quit</em><p>
+ This logs out of Yahoo and closes KYahoo.
+</itemize>
+
+Yahoo
+<itemize>
+<item><em>Logon</em><p>
+ This will log into Yahoo. Make sure you have entered your login and
+ password already in the configuration dialog.
+<item><em>Logoff</em><p>
+ This will logoff of Yahoo. It does not close the window though.
+<item><em>New Conference</em><p>
+ This will start a new conference. You have to select users to invite
+ to the conference. The dialog gives you a list of online buddies and
+ also allows you to type in additional buddies.
+<item><em>Send offline message</em><p>
+ This will send an offline message to someone in your buddylist who
+ isn't logged in.
+<item><em>Add User</em><p>
+ This dialog will add a new user to your buddylist. 
+<item><em>Remove User</em><p>
+ This dialog will remove a user from your buddylist.
+<item><em>Debug Messages</em><p>
+ This dialog will display debug messages. 
+</itemize>
+
+Help
+<itemize>
+<item><em>Contents</em><p>
+ This will display the help browser.
+<item><em>Report Bug</em><p>
+ This dialog allows you to submit a bug. I prefer if you use the
+ sourceforge page instead, but its here for convience. 
+<item><em>About KYahoo</em><p>
+ This dialog displays information about the current version of KYahoo.
+<item><em>About KDE</em><p>
+ This dialog displays information about the current version of KDE.
+</itemize>
+
+<sect> Configuration Options
+<p>
+Login
+<itemize>
+<item><em>Yahoo ID</em><p>
+This is your Yahoo login name.
+<item><em>Password</em><p>
+Your Yahoo password.
+<item><em>Login under Invisible Mode</em><p>
+This option allows you to log in and not look like you are logged in
+to anyone else. 
+<item><em>Login on startup</em><p>
+This option will automatically log into Yahoo when you start KYahoo.
+</itemize>
+
+Misc
+<itemize>
+<item><em>Accept Message from friends only?</em><p>
+This feature isn't implemented yet. It will be tied into the ignore
+list of the real Yahoo pager and will only allow messages from people
+in your buddy list. 
+<item><em>Show online friends only?</em><p>
+This feature will only show buddies that are online in the buddylist.
+<item><em>Dynamically resize buddylist?</em><p>
+This feature will attempt to resize the main KYahoo window to fit the
+custom status messages in the window. 
+<item><em>Use graphical emoticons in chat window?</em><p>
+This option will use graphical emoticons instead of the text version.
+<item><em>Allow Idle state</em><p>
+This feature will set your status from Available to Idle after a
+certain amount of time. If your status is not Available, you will not
+transistion to Idle state even if you are logged in.  
+</itemize>
+
+LibYahoo 
+<itemize>
+<item><em>Connection Mode</em><p>
+This feature will select your connection mode. Normal mode is the default
+connection method and should be used if you can be directly connected
+to the internet. HTTP mode will attempt to only use the HTTP protocol
+to talk to Yahoo. HTTP-Proxy mode will use a HTTP proxy to talk to
+Yahoo. 
+<item><em>Proxy Host</em><p>
+Use this option with the HTTP-Proxy connection mode to specify the
+hostname of the HTTP proxy.
+<item><em>Proxy Port</em><p>
+Use this option with the HTTP-Proxy connection mode to specify the
+port number of the HTTP proxy host. 
+</itemize>
+
+Sound
+<itemize>
+<item><em>Play sound for Buddy Logon</em><p>
+This option will play the selected .wav file when someone on your
+buddylist logs into Yahoo.
+<item><em>Play sound for Buddy Logoff</em><p>
+This option will play the selected .wav file when someone on your
+buddylist leaves Yahoo.
+<item><em>Play sound for new message</em><p>
+This option will play the selected .wav file when a new message has
+arrived. It will only play if there is no chat window open for this
+message or if the chat window that is open isn't currently the active window.
+<item><em>Play a buzz sound</em><p>
+This option will play the selected .wav file when a user buzz's you,
+or you type &lt ding &gt in chat window.  
+</itemize>
+
+<sect>Copyright<p>
+
+KYahoo Copyright 2000 Jay Lubomirski, jaylubo@fiam.net
+
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+<p>
+</article>

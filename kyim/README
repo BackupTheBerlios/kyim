@@ -1,0 +1,43 @@
+Disclaimer: Yahoo does not support this software in any way!! Do not bother
+them with questions. 
+
+Send all questions/suggestions/etc to :
+	kyim-support@lists.sourceforge.net
+
+Thanks to Philip S Tellis for creating and maintaining libyahoo2. 
+
+Thanks to www.freeaudioclips.com for the sounds clips supplied with
+the distribution. The default location for those files on your system
+is $KDEDIR/share/apps/kyim/sounds.
+
+
+============================================================================
+
+THIS VERSION WILL ONLY WORK ON KDE3 and Qt 3.x 
+
+This is a development version. It is the first release on the new libyahoo
+code. Currently chat and conferencing should work, file transfers do not 
+work. 
+
+Please report all bugs to our database at 
+
+http://kyim.sourceforge.net/download.html 
+
+or email kyim-support@lists.sourceforge.net
+
+To build:
+./configure
+make
+make install
+
+=============================================================================
+
+HOW TO USE:
+-----------
+To chat: double click on name in buddylist.
+To start a conference: Select Yahoo-->New Conference
+
+You can only change options when not logged into Yahoo. 
+
+The "Debug Messages" window will show the raw yahoo packets from yahoolib.
+

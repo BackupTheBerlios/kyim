@@ -1,0 +1,180 @@
+2004-02-29    <jaylubo@speedy>
+
+	* Update version number to 022904
+
+2004-02-29    <jaylubo@speedy>
+
+	* Update to latest (January) libyahoo2
+	* Update add handler/ remove handler to work with libyahoo; needed write handler added.
+
+2003-09-28    jaylubo
+	* Pull in latest libyahoo2 code. 
+	* Half-heartedly implement the non-blocking login. Will need fixed up to work for real.
+
+2003-03-11    Ariya
+
+- utf8 support
+- Quit in the chat/conference menu is replaced with Close
+- disable buzz detection in conference (as conference knows no buzz)
+- fix for devil and sunglasses emoticons
+- use standard KLineEditDlg for asking custom status message
+
+2002-03-31    jaylubo
+	* Add "buzz.wav" default sound for buzz'ing.
+2002-03-31  nikopol
+	* merging from tuxfamily/nikosoft:
+		- better handling of sending offline messages (Ankit)
+		- new mail button (Alex)
+		- more various bugfixes
+	* sending offline messages warning can be disabled
+2002-03-10  jaylubo
+	* merged rest of tree from tuxfamily to sf
+2002-03-05  nikopol
+	* merging tree from tuxfamily/nikosoft:
+		- new support for emoticons (all 24) by Ankit and Alex
+		- parsing of offline messages by Ankit
+		- new build system by Alex
+		- various bugfixes ("http", incorrect refresh at logoff, ...)
+2002-02-12  jaylubo
+	* Apply Alex's patch: internationalization support.
+	* Fix crash at shutdown.
+2001-12-14  jaylubo
+	* Apply Alex's patch. Take out some more KYahoo stuff.
+	* More language support.
+2001-12-06  jaylubo
+	* Clean up warnings.
+Tue Dec  4 01:30:02 EST 2001 - Jay Lubomirski <jaylubo@fiam.net>
+    o Initial Creation
+2001-09-30  jaylubo
+	* Fix bug #447352, text not scrolling when window is not active.
+2001-09-30  jaylubo
+	* Fix bug #452551, 48x48 icon got lost somehow.
+	* Fix bug #452543, Logoff closes all chat windows. Also fixed bug where status time was showing up on chat windows.
+2001-09-30  jaylubo
+	* Fix bug #439998, Add fast disconnect option that is sensitive to the network connection going away.
+2001-09-30  jaylubo
+	* Fix bug #424460: Add options to disable menu and status bars.
+2001-09-29  jaylubo
+	* Add option to display time of last status change on buddy list. Feature request #458145.
+2001-09-29  jaylubo
+	* Apply Alex's patch to add an optiont to disable mail notification.
+2001-08-18  jaylubo
+	* Complete plain-text log file support. Fix bold, italic, underline termination bug.
+2001-08-18  jaylubo
+	* Adding log file support.
+2001-08-06  jaylubo
+	* Applied Alex's patch: save the position of the window when it's hidden, and restore it at the position it was before beeing hidden.
+2001-08-06  jaylubo
+	* Apply Alex's patch: New Adduser dialog.
+2001-07-24  jaylubo
+	* Apply Frank's patch: bugfixes - bigger chat window and stop the flicker in the chat and converence windows when a new message arrives.
+2001-06-26  jaylubo
+	* Applied Alex's patch: addbuddy menu item to chat window
+2001-06-18  jaylubo
+	* Applied Alex's patch: make kdevelop work, add profile option to menu.
+2001-06-17  jaylubo
+	* New chat window/ conference window
+2001-06-02  jaylubo
+	* Fix bug #425039
+2001-06-02  jaylubo
+	* Applied Frank's patch to add a dcop interface for KYahoo.
+2001-06-02  jaylubo
+	* Applied Alex's patch: use a combo box for the addbuddy dialog group name
+2001-06-02  jaylubo
+	* Applied Alex's patch: allow setup while logged in (can't change connection info)
+	* Added Refresh buddylist menu option
+	* New systray icon
+2001-05-04  jaylubo
+	* Moved the status icons out of buddylist.cpp and into their own file for easier access.
+2001-05-04  jaylubo
+	* Applied Haris's patch for chatwindow emoticons.
+2001-05-01  jaylubo
+	* Fixed bug #417410, resing html widget not staying at the bottom on the text. Clunky but effective fix.
+2001-04-26  jaylubo
+	* Applied Frank's patch for bug #418879, added the raise window functionality as well.
+2001-04-25  jaylubo
+	* Added code to handle HTTP connections, can't test proxy stuff though.
+2001-04-25  jaylubo
+	* Add Frank's incoming file transfer dialog.
+2001-04-21  jaylubo
+	* Added a real parse tree to handle messages.
+2001-04-07  jaylubo
+	* Fixed bug 414524, removing buddies from multiple groups. Need to put more work on the buddylist concept.
+2001-04-03  jaylubo
+	* Fixed bug 412489
+2001-03-21  jaylubo
+	* Updates from Frank for buzz sound and <> bugfix.
+0.6
+===============
+Inserted Popup to show online buddies on systray icon.
+Inserted menus into systray icon.
+Added new start chat session dialog. For use in future systray menu.
+Added new systray Icon. Initial functionality, need to do more with it later.
+Added new Add/Remove buddy dialogs that use the Qt Dialog editor. 
+Added new offline msg dialog.
+Added new additional conference invite dialog.
+Added new custom status message dialog.
+Added new Conference Invitation dialog.
+Fixed bug in conference code where if a user declined a conference invitation
+their reason was never displayed.
+Added new setup dialog.
+Fixed bugs 131964, 131962, 131971. (Sound paths not initialzing right,
+migration path to new kyahoorc, and saving initial configuration.)
+0.5
+===============
+Fixed resizing bug.. forget to finish that before releasing 0.4
+Hacked around the "<>" missing in chat window bugs. Converts <> to () instead
+of losing them to the html parser.
+Converted to using libyahoo straight from the distribuition, now builds
+in its own directory and is linked instead. 
+Added the "diamond of status" pixmaps to the buddylist, so nwo you have
+pretty colors to correspond to the different status levels.
+Added option to not dynamically resize the buddylist with each status update.
+Fixed conference packet parsing problems.
+Fixed offline msg parsing problem.
+Added Offline Msg Dialog.
+Screened out extra field on status message.
+0.4
+===============
+Ported to KDE2. No will only work with Qt > 2.0 and KDE2.
+Changed chat and conference dialogs to handle colors/formatting/urls.
+Fixed resizing of the buddylist, now will shrink back to proper size.
+0.3
+===============
+Added sound support.
+Fixed resizing bug #113289.
+0.2.2
+===============
+Fixed bug 110400 - status updates when windows client had custom message were
+repeated. 
+Fixed bug 109946 - added includes to aid in solaris compile.
+Fixed bug 109934 - KYahoo crashed ugly when the server dropped the connection.
+Fixed configure script issues. (Should work better now)
+Added new mail notification.
+Added Connection Mode/ Proxy info to the setup dialog.
+0.2.1
+===============
+Fixed compile problems for SUSE systems and gcc.
+0.2
+===============
+Added:
+* Custom Status Message support.
+* Idle Timer support.
+* Show online friends only support. 
+* Shows status changes for users in chat/conference windows.
+* Changed look of conference window, to pop a dialog box up to invite
+    another user to the conference.
+Fixed:
+#108022: Bug in conference code, will kick user out of conference
+if their status changes to logged out (or invisible, unfortunately). This
+handles the case when kyahoo crashes and leaves ghosts in conferences. I
+don't believe that The windows client acts this way, so I might take it
+out later.
+#109390: Bug in off-line messages, didn't show time in a human readable
+format for when the message was sent.
+#109155: Couldn't run KYahoo overnight, the server logged the user
+out. (Added yahoo_cmd_ping functionality)
+0.1
+===============
+Initial Release
+

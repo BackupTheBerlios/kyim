@@ -1,0 +1,176 @@
+<!DOCTYPE UI><UI version="3.0" stdsetdef="1">
+<class>BuddyList</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>BuddyList</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>375</width>
+            <height>332</height>
+        </rect>
+    </property>
+    <property name="cursor">
+        <cursor>0</cursor>
+    </property>
+    <property name="caption">
+        <string>BuddyList</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <property name="spacing">
+            <number>0</number>
+        </property>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>Layout1</cstring>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <widget class="QListView">
+                    <column>
+                        <property name="text">
+                            <string>ID</string>
+                        </property>
+                        <property name="clickable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="resizeable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>State</string>
+                        </property>
+                        <property name="clickable">
+                            <bool>false</bool>
+                        </property>
+                        <property name="resizeable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                    <property name="name">
+                        <cstring>BuddyListView</cstring>
+                    </property>
+                    <property name="cursor">
+                        <cursor>0</cursor>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Raised</enum>
+                    </property>
+                    <property name="dragAutoScroll">
+                        <bool>false</bool>
+                    </property>
+                    <property name="showSortIndicator">
+                        <bool>false</bool>
+                    </property>
+                    <property name="itemMargin">
+                        <number>2</number>
+                    </property>
+                    <property name="resizeMode">
+                        <enum>LastColumn</enum>
+                    </property>
+                </widget>
+                <widget class="QFrame">
+                    <property name="name">
+                        <cstring>Frame3</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <property name="margin">
+                            <number>11</number>
+                        </property>
+                        <property name="spacing">
+                            <number>6</number>
+                        </property>
+                        <spacer>
+                            <property name="name">
+                                <cstring>Spacer2</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                        </spacer>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>TextLabel1</cstring>
+                            </property>
+                            <property name="text">
+                                <string>My Status</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignVCenter|AlignRight</set>
+                            </property>
+                        </widget>
+                        <widget class="KComboBox">
+                            <property name="name">
+                                <cstring>MyStatus</cstring>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>Spacer1</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Expanding</enum>
+                            </property>
+                        </spacer>
+                    </hbox>
+                </widget>
+            </vbox>
+        </widget>
+    </vbox>
+</widget>
+<connections>
+    <connection>
+        <sender>BuddyListView</sender>
+        <signal>doubleClicked(QListViewItem*)</signal>
+        <receiver>BuddyList</receiver>
+        <slot>buddyClicked(QListViewItem*)</slot>
+    </connection>
+    <connection>
+        <sender>MyStatus</sender>
+        <signal>activated(int)</signal>
+        <receiver>BuddyList</receiver>
+        <slot>MyStatusChanged(int)</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="global" impldecl="in declaration">kcombobox.h</include>
+</includes>
+<slots>
+    <slot>MyStatusChanged( int indx )</slot>
+    <slot>buddyClicked( QListViewItem * )</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

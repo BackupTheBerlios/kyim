@@ -1,0 +1,83 @@
+<!DOCTYPE UI><UI>
+<class>StartChat</class>
+<widget>
+    <class>QWidget</class>
+    <property stdset="1">
+        <name>name</name>
+        <cstring>StartChat</cstring>
+    </property>
+    <property stdset="1">
+        <name>geometry</name>
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>350</width>
+            <height>178</height>
+        </rect>
+    </property>
+                            <grid>
+                                <property stdset="1">
+                                    <name>margin</name>
+                                    <number>0</number>
+                                </property>
+                                <property stdset="1">
+                                    <name>spacing</name>
+                                    <number>6</number>
+                                </property>
+                                <widget row="1"  column="0" >
+                                    <class>QLabel</class>
+                                    <property stdset="1">
+                                        <name>name</name>
+                                        <cstring>TextLabel3</cstring>
+                                    </property>
+                                    <property stdset="1">
+                                        <name>text</name>
+                                        <string>Message:</string>
+                                    </property>
+                                    <property stdset="1">
+                                        <name>alignment</name>
+                                        <set>AlignVCenter|AlignRight</set>
+                                    </property>
+                                    <property>
+                                        <name>hAlign</name>
+                                    </property>
+                                </widget>
+                                <widget row="0"  column="0" >
+                                    <class>QLabel</class>
+                                    <property stdset="1">
+                                        <name>name</name>
+                                        <cstring>TextLabel2</cstring>
+                                    </property>
+                                    <property stdset="1">
+                                        <name>text</name>
+                                        <string>Buddy:</string>
+                                    </property>
+                                    <property stdset="1">
+                                        <name>alignment</name>
+                                        <set>AlignVCenter|AlignRight</set>
+                                    </property>
+                                    <property>
+                                        <name>hAlign</name>
+                                    </property>
+                                </widget>
+                                <widget row="1"  column="1" >
+                                    <class>QLineEdit</class>
+                                    <property stdset="1">
+                                        <name>name</name>
+                                        <cstring>Msg</cstring>
+                                    </property>
+                                </widget>
+                                <widget row="0"  column="1" >
+                                    <class>QComboBox</class>
+                                    <property stdset="1">
+                                        <name>name</name>
+                                        <cstring>ID</cstring>
+                                    </property>
+                                    <property stdset="1">
+                                        <name>editable</name>
+                                        <bool>true</bool>
+                                    </property>
+                                </widget>
+                            </grid>
+</widget>
+</UI>

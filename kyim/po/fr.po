@@ -1,0 +1,733 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2002-03-26 23:34+0100\n"
+"PO-Revision-Date: 2002-03-26 23:35GMT\n"
+"Last-Translator: Alexandre Aufrere <loopkin@nikosoft.net>\n"
+"Language-Team: Francais <fr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.5\n"
+
+#: ChatBase.cpp:42
+msgid "Q&uit"
+msgstr "Q&uitter"
+
+#: ChatBase.cpp:43
+msgid "&Save (Formatted)"
+msgstr "&Sauver (Formatté)"
+
+#: ChatBase.cpp:45
+msgid "S&ave (Unformatted)"
+msgstr "S&auver (Non Formatté)"
+
+#: ChatSession.cpp:44
+msgid "Chat Session with "
+msgstr "Session de Dialogue avec "
+
+#: ChatSession.cpp:89
+msgid "User not online. Sent as an offline message."
+msgstr "Utilisateur hors-ligne. Envoyé en tant que message hors-ligne"
+
+#: ChatSession.cpp:189
+msgid "&Profile"
+msgstr "&Profil"
+
+#: ChatSession.cpp:190
+msgid "&Add Buddy"
+msgstr "&Ajouter un Ami"
+
+#: ChatSession.cpp:191
+msgid "Do &Not Warn Me When Buddy Offline"
+msgstr "&Ne Pas M'Avertir Quand Ami Hors-Ligne"
+
+#: ChatSession.cpp:195
+msgid "&Buddy"
+msgstr "&Ami"
+
+#: ChatSession.cpp:199
+msgid "&Force Default Font"
+msgstr "&Forcer la Police par Défaut"
+
+#: ChatSession.cpp:203
+msgid "&Font"
+msgstr "&Police"
+
+#: ChatSession.cpp:218 ConferenceSession.cpp:253
+msgid "Emoticons"
+msgstr "Emoticones"
+
+#: ConferenceWindowImpl.cpp:252
+msgid "Yahooo's n crashes into the ground..yes he was flyin!! "
+msgstr "Yahooo.. s'écrase sur le sol... oui il volait !!!"
+
+#: ConferenceWindowImpl.cpp:254
+msgid "the Matrix has YOU!"
+msgstr "tu appartiens à la Matrice !"
+
+#: ConferenceWindowImpl.cpp:256
+msgid "May the SOURCE be with you!"
+msgstr "Que la SOURCE soit avec toi !"
+
+#: IncomingFileTransferImpl.cpp:64
+msgid "File transfer could not be completed."
+msgstr "Le transfert de fichier n'a pas été terminé."
+
+#: buddylist.cpp:103
+msgid "Available"
+msgstr "En Ligne"
+
+#: buddylist.cpp:105
+msgid "Not Available"
+msgstr "Hors Ligne"
+
+#: buddylist.cpp:175
+msgid "State"
+msgstr "Etat"
+
+#: buddylist.cpp:415 buddylist.cpp:442
+msgid "Changed status to "
+msgstr "Est A Present "
+
+#: buddylist.cpp:529 buddylist.cpp:537
+msgid "Logged In."
+msgstr "Logué."
+
+#: dialogs.cpp:41
+msgid "KYIM: Start New Conference"
+msgstr "KYIM: Nouvelle Conférence"
+
+#: dialogs.cpp:60
+msgid "Currently Online Buddies:"
+msgstr "Amis actuellement en ligne:"
+
+#: dialogs.cpp:65
+msgid "Name"
+msgstr "Nom"
+
+#: dialogs.cpp:81
+msgid "Additional users:"
+msgstr "Utilisateurs additionnels:"
+
+#: dialogs.cpp:92
+msgid "Add to invitation"
+msgstr "Ajouter à l'invitation"
+
+#: dialogs.cpp:98
+msgid "Invited Users:"
+msgstr "Utilisateurs invités:"
+
+#: dialogs.cpp:106
+msgid "Invitation message:"
+msgstr "Message d'invitation:"
+
+#: dialogs.cpp:112
+msgid "Join My Conference...!"
+msgstr "Rejoignez ma conférence...!"
+
+#: dialogs.cpp:118
+msgid "Done"
+msgstr "OK"
+
+#: dialogs.cpp:232
+msgid "KYIM: Debug Messages"
+msgstr "KYIM: Messages de Déboguage"
+
+#: main.cpp:85
+msgid "KDE Port of Yahoo Messenger"
+msgstr "Une versioon pour KDE de Yahoo Messenger"
+
+#: main.cpp:88
+msgid "This software is not supported or sponsored in any way by Yahoo."
+msgstr "Ce logiciel n'est pas supporté ni sponsorisé par Yahoo !"
+
+#: main.cpp:112
+msgid "emoticons artwork"
+msgstr "graphisme des émoticones"
+
+#: main.cpp:193 main.cpp:246
+msgid "&Logon"
+msgstr "Se &Loguer"
+
+#: main.cpp:195 main.cpp:248
+msgid "Log&off"
+msgstr "Se Dél&oguer"
+
+#: main.cpp:197 main.cpp:250
+msgid "&New Chat Session"
+msgstr "&Nouvelle Session de Dialogue"
+
+#: main.cpp:199 main.cpp:253
+msgid "New &Conference"
+msgstr "Nouvelle &Conférence"
+
+#: main.cpp:201 main.cpp:256
+msgid "&Send Offline Message"
+msgstr "Envoyer un Me&ssage Hors-Ligne"
+
+#: main.cpp:203 main.cpp:234
+msgid "View &Status Bar"
+msgstr "Afficher la Barre d'&Etat"
+
+#: main.cpp:205 main.cpp:236
+msgid "View &Menu Bar"
+msgstr "Afficher la Barre de &Menu"
+
+#: main.cpp:216
+msgid "O&ptions"
+msgstr "O&ptions"
+
+#: main.cpp:218
+msgid "&Save Options"
+msgstr "&Sauver les Options"
+
+#: main.cpp:220
+msgid "&Refresh"
+msgstr "&Rafraîchir"
+
+#: main.cpp:238
+msgid "&Debug Messages"
+msgstr "Messages de &Déboguage"
+
+#: main.cpp:259
+msgid "&Add User"
+msgstr "&Ajouter un Utilisateur"
+
+#: main.cpp:261
+msgid "&Remove User"
+msgstr "Supp&rimer un Utilisateur"
+
+#: main.cpp:266
+msgid "New Chat Session"
+msgstr "Nouvelle Session de Dialogue"
+
+#: main.cpp:267
+msgid "Add User"
+msgstr "Ajouter un Utilisateur"
+
+#: main.cpp:268
+msgid "Find Friends"
+msgstr "Trouver des Amis"
+
+#: NewMail.cpp:100 main.cpp:269
+msgid "Go To Mail"
+msgstr "Aller au Mail"
+
+#: main.cpp:279
+msgid "&Yahoo"
+msgstr "&Yahoo"
+
+#: main.cpp:290
+msgid "None"
+msgstr "Aucun"
+
+#: main.cpp:291
+msgid "Not logged on."
+msgstr "Non Logué."
+
+#: main.cpp:304
+msgid ""
+"You will need to login manually\n"
+" the first time.\n"
+"\n"
+"After setting up KYIM\n"
+"select Yahoo->Login to login.\n"
+msgstr ""
+"Vous devez vous loguer manuellement\n"
+" la première fois.\n"
+"\n"
+"Après avoir configuré KYIM\n"
+"faites Yahoo->Se Loguer.\n"
+
+#: main.cpp:597
+msgid "Logged in."
+msgstr "Logué."
+
+#: main.cpp:654 main.cpp:702
+msgid "Not logged in."
+msgstr "Non Logué."
+
+#: process_packet.cpp:47
+msgid "Connection with Yahoo Lost!"
+msgstr "La connexion avec Yahoo a été perdue !"
+
+#: process_packet.cpp:359 process_packet.cpp:405
+msgid "User not online."
+msgstr "L'utilisateur n'est pas en ligne."
+
+#: process_packet.cpp:363
+msgid "(User not online. Sent as an offline message)"
+msgstr "(Utilisateur hors-ligne. Envoyé en tant que message hors-ligne)"
+
+#: process_packet.cpp:409
+msgid "(User not online. Message sent as an offline message.)"
+msgstr "(Utilisateur hors-ligne. Message envoyé en tant que message hors-ligne)"
+
+#: process_packet.cpp:534
+msgid " declined to join conference. Reason: "
+msgstr " a refusé de se joindre à la conférence. Raison: "
+
+#: process_packet.cpp:810
+msgid "You have been disconnected due to duplicate logon."
+msgstr "Vous avez été déconnecté pour cause de double loguage."
+
+#: ChatWindow.cpp:30 EmotPopup.cpp:764
+msgid "Form1"
+msgstr "Form1"
+
+#: StartChat.cpp:35
+msgid "KYIM: Start Chat Session"
+msgstr "KYIM: Nouvelle Session de Dialogue"
+
+#: StartChat.cpp:45
+msgid "Start Chat Session"
+msgstr "Nouvelle Session de Dialogue"
+
+#: StartChat.cpp:61
+msgid "Message:"
+msgstr "Message:"
+
+#: StartChat.cpp:67
+msgid "Buddy:"
+msgstr "Ami"
+
+#: StartChat.cpp:90
+msgid "Chat"
+msgstr "Dialogue"
+
+#: Setup.cpp:41
+msgid "KYIM: Setup"
+msgstr "KYIM: Configuration"
+
+#: Setup.cpp:62
+msgid "Please enter your Yahoo login and password."
+msgstr "Entrez votre nom d'utilisateur et mot de passe Yahoo"
+
+#: Setup.cpp:79
+msgid "Password:"
+msgstr "Mot de passe:"
+
+#: Setup.cpp:84
+msgid "Yahoo ID:"
+msgstr "Yahoo ID:"
+
+#: Setup.cpp:91
+msgid "Startup Options"
+msgstr "Options de Démarrage"
+
+#: Setup.cpp:101
+msgid "Login under Invisible Mode?"
+msgstr "Se Loguer en Mode Invisible"
+
+#: Setup.cpp:105
+msgid "Login on startup?"
+msgstr "Se Loguer au Démarrage ?"
+
+#: Setup.cpp:110
+msgid "Login"
+msgstr "Nom d'Utilisateur"
+
+#: Setup.cpp:119
+msgid "Accept Messages from friends only?"
+msgstr "Accepter les Messages Seulement des Utilisateurs ?"
+
+#: Setup.cpp:124
+msgid "Show online friends only?"
+msgstr "Ne Montrer que les Amis en Ligne ?"
+
+#: Setup.cpp:129
+msgid "Dynamically resize buddylist?"
+msgstr "Redimensionner Dynamiquement la Liste de Contacts ?"
+
+#: Setup.cpp:134
+msgid "Use graphical emoticons in chat window?"
+msgstr "Utiliser des Emoticones Graphiques ?"
+
+#: Setup.cpp:139
+msgid "Disable mail notification?"
+msgstr "Désactiver la Notification d'E-Mail ?"
+
+#: Setup.cpp:144
+msgid "Show last updated status time in buddylist?"
+msgstr "Montrer l'Heure de Changement d'Etat dans la Liste d'Amis ?"
+
+#: Setup.cpp:149
+msgid "Close all windows on logoff?"
+msgstr "Fermer toutes les Fenetres en se Déloguant ?"
+
+#: Setup.cpp:154
+msgid "Received files path:"
+msgstr "Chemin pour les fichiers reçus:"
+
+#: Setup.cpp:161
+msgid "Idle Mode"
+msgstr "Mode Inactif"
+
+#: Setup.cpp:170
+msgid "Time before going idle (minutes) :"
+msgstr "Temps à Devenir Inactif (minutes) :"
+
+#: Setup.cpp:182
+msgid "Allow Idle State?"
+msgstr "Autoriser l'Etat Inactif ?"
+
+#: IncomingFileTransfer.cpp:94 Setup.cpp:191
+msgid "Browse"
+msgstr "Parcourir"
+
+#: Setup.cpp:194
+msgid "Misc"
+msgstr "Divers"
+
+#: Setup.cpp:206
+msgid "Connection Mode:"
+msgstr "Mode de Connexion:"
+
+#: Setup.cpp:214
+msgid "Proxy Information"
+msgstr "Information de Proxy"
+
+#: Setup.cpp:228
+msgid "Proxy Host"
+msgstr "Hôte du Proxy"
+
+#: Setup.cpp:233
+msgid "Proxy Port"
+msgstr "Port du Proxy"
+
+#: Setup.cpp:248
+msgid "LibYahoo"
+msgstr "LibYahoo"
+
+#: Setup.cpp:267
+msgid "Play sound for new message?"
+msgstr "Jouer un Son pour un Nouveau Message ?"
+
+#: Setup.cpp:278 Setup.cpp:308 Setup.cpp:338 Setup.cpp:368
+msgid "Change Sound"
+msgstr "Changer le Son"
+
+#: Setup.cpp:297
+msgid "Play sound for buddy logoff?"
+msgstr "Jouer un Son lorsqu'un Ami passe Hors-Ligne"
+
+#: Setup.cpp:327
+msgid "Play sound for buddy logon?"
+msgstr "Jouer un Son lorsqu'un Ami Arrive ?"
+
+#: Setup.cpp:357
+msgid "Play a buzz sound?"
+msgstr "Jouer un Son Buzz ?"
+
+#: Setup.cpp:375
+msgid "Sound"
+msgstr "Son"
+
+#: RemoveBuddy.cpp:34
+msgid "KYIM: Remove Buddy"
+msgstr "KYIM: Supprimer un Ami"
+
+#: RemoveBuddy.cpp:40
+msgid "Select the YahooID of the buddy you want to remove from your buddylist."
+msgstr "Choisir le YahooID de l'ami que vous souhaitez retirer de votre liste."
+
+#: AddBuddy.cpp:64 RemoveBuddy.cpp:62
+msgid "YahooID"
+msgstr "YahooID"
+
+#: AddBuddy.cpp:69 RemoveBuddy.cpp:68
+msgid "Group"
+msgstr "Groupe"
+
+#: AddBuddy.cpp:103 AddedMessage.cpp:36 ConfAddInvite.cpp:53 CustStatus.cpp:52
+#: OfflineMsg.cpp:78 ProxyAuth.cpp:87 RemoveBuddy.cpp:88
+msgid "Ok"
+msgstr "Ok"
+
+#: ProxyAuth.cpp:34
+msgid "KYIM: Proxy Autentication"
+msgstr "KYIM: Authentification du Proxy"
+
+#: ProxyAuth.cpp:40
+msgid "Your Proxy needs Authentication. Enter your proxy username and password."
+msgstr ""
+"Votre Proxy a besoin d'informations d'authentification: Entrez votre nom "
+"d'utilisateur et mot de passe pour le Proxy."
+
+#: ProxyAuth.cpp:58
+msgid "Password"
+msgstr "Mot de Passe"
+
+#: ProxyAuth.cpp:63
+msgid "Username"
+msgstr "Nom d'Utilisateur"
+
+#: OfflineMsg.cpp:34
+msgid "KYIM: Send Offline Message"
+msgstr "KYIM: Envoyer un Message Hors-Ligne"
+
+#: OfflineMsg.cpp:46
+msgid "Send to"
+msgstr "Envoyer à"
+
+#: OfflineMsg.cpp:61
+msgid "Message"
+msgstr "Message"
+
+#: NewMail.cpp:66
+msgid "New Mail !"
+msgstr "Nouvel E-Mail !"
+
+#: NewMail.cpp:83
+msgid "You Have New Yahoo! Mail !"
+msgstr "Vous avez un Nouvel E-Mail Yahoo !"
+
+#: IncomingFileTransfer.cpp:35
+msgid "KYIM: Incoming File Transfer"
+msgstr "KYIM: Arrivée d'un Fichier"
+
+#: IncomingFileTransfer.cpp:43
+msgid "The buddy sending the transfer."
+msgstr "L'ami envoyant le fichier."
+
+#: IncomingFileTransfer.cpp:49
+msgid "From:"
+msgstr "De:"
+
+#: IncomingFileTransfer.cpp:65
+msgid "Description:"
+msgstr "Description:"
+
+#: IncomingFileTransfer.cpp:70
+msgid "A message accompanying this transfer."
+msgstr "Le message accompagnant le fichier."
+
+#: IncomingFileTransfer.cpp:82
+msgid "Destination:"
+msgstr "Destination:"
+
+#: IncomingFileTransfer.cpp:90
+msgid "Where to save the file."
+msgstr "Où sauver le fichier."
+
+#: IncomingFileTransfer.cpp:104
+msgid "&Accept"
+msgstr "&Accepter"
+
+#: IncomingFileTransfer.cpp:111
+msgid "&Deny"
+msgstr "&Refuser"
+
+#: CustStatus.cpp:33
+msgid "KYIM: Custom Status Message"
+msgstr "KYIM: Message d'Etat Personnalisé"
+
+#: CustStatus.cpp:39
+msgid "Enter custom status message:"
+msgstr "Entrez votre message d'état:"
+
+#: ConfInvitation.cpp:34
+msgid "KYIM: Conference Invitation"
+msgstr "KYIM: Invitation à une Conférence"
+
+#: ConfInvitation.cpp:44
+msgid "Insert Name Here"
+msgstr "Insérez votre Nom Ici"
+
+#: ConfInvitation.cpp:49
+msgid "invited you to a conference,"
+msgstr "vous a invité à une conférence,"
+
+#: ConfInvitation.cpp:54
+msgid "and said:"
+msgstr "et a dit:"
+
+#: ConfInvitation.cpp:59
+msgid "Insert Message Here"
+msgstr "Insérez le Message Ici"
+
+#: ConfInvitation.cpp:66
+msgid "Do you want to join the conference?"
+msgstr "Voulez vous vous joindre à la conférence ?"
+
+#: ConfInvitation.cpp:84
+msgid "If not, please give a reason for declining:"
+msgstr "Si non, donnez une raison pour refuser:"
+
+#: ConfInvitation.cpp:102
+msgid "Accept"
+msgstr "Accepter"
+
+#: ConfInvitation.cpp:109
+msgid "Decline"
+msgstr "Refuser"
+
+#: ConferenceWindow.cpp:32
+msgid "Form2"
+msgstr "Form2"
+
+#: ConferenceWindow.cpp:46
+msgid "Send Message"
+msgstr "Envoyer le Message"
+
+#: ConferenceWindow.cpp:56
+msgid "Invite Another Buddy"
+msgstr "Inviter un Autre Ami"
+
+#: ConferenceWindow.cpp:62
+msgid "Leave Conference"
+msgstr "Quitter la Conférence"
+
+#: ConfAddInvite.cpp:33
+msgid "KYIM: Invite a buddy to conference"
+msgstr "KYIM: Inviter un ami à une conférence"
+
+#: ConfAddInvite.cpp:39
+msgid "Buddy to invite:"
+msgstr "Ami à inviter:"
+
+#: ChatWindow.cpp:48
+msgid "Send"
+msgstr "Envoyer"
+
+#: AddedMessage.cpp:32
+msgid "You have been added !"
+msgstr "Vous avez été ajouté !"
+
+#: AddedMessage.cpp:40
+msgid "Accept And Add"
+msgstr "Accepter et Ajouter"
+
+#: AddedMessage.cpp:44
+msgid "View Profile"
+msgstr "Voir le Profil"
+
+#: AddBuddy.cpp:35
+msgid "KYIM: Add Buddy"
+msgstr "KYIM: Ajouter un Ami"
+
+#: AddBuddy.cpp:41
+msgid "Enter the YahooID of the buddy you want to add to your buddylist."
+msgstr "Entrez le YahooID de l'ami que vous souhaitez ajouter dans votre liste."
+
+#: AddBuddy.cpp:83
+msgid "Message to new buddy"
+msgstr "Message au nouvel ami"
+
+#: SetupImpl.moc.cpp:42 SetupImpl.moc.cpp:47
+msgid "SetupImpl"
+msgstr "SetupImpl"
+
+#: CustStatusImpl.moc.cpp:42 CustStatusImpl.moc.cpp:47
+msgid "CustStatusImpl"
+msgstr "CustStatusImpl"
+
+#: kyim.moc.cpp:42 kyim.moc.cpp:47
+msgid "KYahoo"
+msgstr "KYahoo"
+
+#: IncomingFileTransferImpl.moc.cpp:42 IncomingFileTransferImpl.moc.cpp:47
+msgid "IncomingFileTransferImpl"
+msgstr "IncomingFileTransferImpl"
+
+#: Icon.moc.cpp:42 Icon.moc.cpp:47
+msgid "Icon"
+msgstr "Icon"
+
+#: RemoveBuddyImpl.moc.cpp:42 RemoveBuddyImpl.moc.cpp:47
+msgid "RemoveBuddyImpl"
+msgstr "RemoveBuddyImpl"
+
+#: AddBuddyImpl.moc.cpp:42 AddBuddyImpl.moc.cpp:47
+msgid "AddBuddyImpl"
+msgstr "AddBuddyImpl"
+
+#: ChatBase.moc.cpp:42 ChatBase.moc.cpp:47
+msgid "ChatBase"
+msgstr "ChatBase"
+
+#: process_packet.moc.cpp:42 process_packet.moc.cpp:47
+msgid "packet"
+msgstr "packet"
+
+#: dialogs.moc.cpp:42 dialogs.moc.cpp:47
+msgid "Conference_Invite_Window"
+msgstr "Conference_Invite_Window"
+
+#: dialogs.moc.cpp:118 dialogs.moc.cpp:123
+msgid "Debug_Msg_Dialog"
+msgstr "Debug_Msg_Dialog"
+
+#: ChatWindowImpl.moc.cpp:42 ChatWindowImpl.moc.cpp:47
+msgid "ChatWindowImpl"
+msgstr "ChatWindowImpl"
+
+#: buddylist.moc.cpp:42 buddylist.moc.cpp:47
+msgid "BuddyList"
+msgstr "BuddyList"
+
+#: ConfInvitationImpl.moc.cpp:42 ConfInvitationImpl.moc.cpp:47
+msgid "ConfInvitationImpl"
+msgstr "ConfInvitationImpl"
+
+#: EmotPopupImpl.moc.cpp:42 EmotPopupImpl.moc.cpp:47
+msgid "EmotPopupImpl"
+msgstr "EmotPopupImpl"
+
+#: ChatSession.moc.cpp:42 ChatSession.moc.cpp:47
+msgid "ChatSession"
+msgstr "ChatSession"
+
+#: ConferenceSession.moc.cpp:42 ConferenceSession.moc.cpp:47
+msgid "ConferenceSession"
+msgstr "ConferenceSession"
+
+#: KYahooIface.moc.cpp:42 KYahooIface.moc.cpp:47
+msgid "KYahooIface"
+msgstr "KYahooIface"
+
+#: StartChatImpl.moc.cpp:42 StartChatImpl.moc.cpp:47
+msgid "StartChatImpl"
+msgstr "StartChatImpl"
+
+#: ConfAddInviteImpl.moc.cpp:42 ConfAddInviteImpl.moc.cpp:47
+msgid "ConfAddInviteImpl"
+msgstr "ConfAddInviteImpl"
+
+#: ConferenceWindowImpl.moc.cpp:42 ConferenceWindowImpl.moc.cpp:47
+msgid "ConferenceWindowImpl"
+msgstr "ConferenceWindowImpl"
+
+#: ProxyAuthImpl.moc.cpp:42 ProxyAuthImpl.moc.cpp:47
+msgid "ProxyAuthImpl"
+msgstr "ProxyAuthImpl"
+
+#: OfflineMsgImpl.moc.cpp:42 OfflineMsgImpl.moc.cpp:47
+msgid "OfflineMsgImpl"
+msgstr "OfflineMsgImpl"
+
+#: OfflinesView.cpp:34
+msgid "Offline Messages"
+msgstr "Messages Hors-Ligne"
+
+#: OfflinesViewImpl.moc.cpp:42 OfflinesViewImpl.moc.cpp:47
+msgid "OfflinesViewImpl"
+msgstr "OfflinesViewImpl"
+
+#: _translatorinfo.cpp:1
+msgid ""
+"_: NAME OF TRANSLATORS\n"
+"Your names"
+msgstr "Alexandre Aufrere"
+
+#: _translatorinfo.cpp:3
+msgid ""
+"_: EMAIL OF TRANSLATORS\n"
+"Your emails"
+msgstr "alexandre.aufrere@free.fr"
+

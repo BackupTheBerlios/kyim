@@ -1,0 +1,118 @@
+<!DOCTYPE UI><UI version="3.1" stdsetdef="1">
+<class>ChatWindow</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>ChatWindow</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>345</width>
+            <height>445</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Form1</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>11</number>
+        </property>
+        <property name="spacing">
+            <number>6</number>
+        </property>
+        <widget class="KTextBrowser">
+            <property name="name">
+                <cstring>text</cstring>
+            </property>
+            <property name="cursor">
+                <cursor>4</cursor>
+            </property>
+        </widget>
+        <widget class="QTextEdit">
+            <property name="name">
+                <cstring>enteredText</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>10</height>
+                </size>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>32767</width>
+                    <height>50</height>
+                </size>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout3</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>40</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>sendButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Send</string>
+                    </property>
+                    <property name="default">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </vbox>
+</widget>
+<connections>
+    <connection>
+        <sender>sendButton</sender>
+        <signal>clicked()</signal>
+        <receiver>ChatWindow</receiver>
+        <slot>newMessage()</slot>
+    </connection>
+    <connection>
+        <sender>enteredText</sender>
+        <signal>returnPressed()</signal>
+        <receiver>ChatWindow</receiver>
+        <slot>textPressed()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="global" impldecl="in declaration">ktextbrowser.h</include>
+</includes>
+<slots>
+    <slot>newMessage()</slot>
+    <slot>textPressed()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>ktextbrowser.h</includehint>
+</includehints>
+</UI>
