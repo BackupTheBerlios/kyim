@@ -396,7 +396,7 @@ void KYahoo::slotAddUser()
     if( groupName.isEmpty() ) groupName = "Friends";    
     
     imstate->AddNewBuddy( yahooId, groupName );
-    yahoo_add_buddy( context->id, yahooId.utf8(), groupName.utf8() );  
+    yahoo_add_buddy( context->id, yahooId.utf8(), groupName.utf8(), 0 );  
   }
   
   delete dlg;

@@ -1,8 +1,8 @@
 /****************************************************************************
-** Form interface generated from reading ui file './AddBuddy.ui'
+** Form interface generated from reading ui file 'AddBuddy.ui'
 **
-** Created: Sun May 23 11:31:04 2004
-**      by: The User Interface Compiler ($Id: AddBuddy.h,v 1.1 2004/05/23 10:12:42 ariya Exp $)
+** Created: Fri Jul 9 23:03:39 2004
+**      by: The User Interface Compiler ($Id: AddBuddy.h,v 1.2 2004/07/09 21:21:20 ariya Exp $)
 **
 ** WARNING! All changes made in this file will be lost!
 ****************************************************************************/

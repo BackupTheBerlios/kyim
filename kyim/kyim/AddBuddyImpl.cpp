@@ -27,7 +27,7 @@ AddBuddyImpl::AddBuddyImpl( QWidget* parent, const char* name, bool modal, WFlag
   
 void AddBuddyImpl::commit()
 {
-  QString name, group;
+  QString name, group, message;
   
   name = ID->text();
   if ( name.isEmpty() )
@@ -43,9 +43,10 @@ void AddBuddyImpl::commit()
       reject();
     }
 
+  message = Msg->text();
   imstate->AddNewBuddy( name, group );
 
-  yahoo_add_buddy( context->id, (const char*)name, (const char*)group);
+  yahoo_add_buddy( context->id, (const char*)name, (const char*)group, (const char*)message );
 
   accept();
 }
