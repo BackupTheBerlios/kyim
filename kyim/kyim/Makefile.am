@@ -1,6 +1,6 @@
 # this has all of the subdirectories that make will recurse into.  if
 # there are none, comment this out
-SUBDIRS = libyahoo2 doc pics sounds
+SUBDIRS = libyahoo2 doc pics sounds 
 
 # this is the program that gets installed.  it's name is used for all
 # of the other Makefile.am variables
@@ -10,7 +10,7 @@ bin_PROGRAMS = kyim
 INCLUDES = $(all_includes) -I./libyahoo2
 
 # the library search path. 
-kyim_LDFLAGS = $(KDE_RPATH) $(all_libraries) -L./libyahoo2
+kyim_LDFLAGS = $(KDE_RPATH) $(all_libraries) -L./libyahoo2 
 
 # the libraries to link against.
 kyim_LDADD   = $(LIB_KFILE) -lyahoo2
@@ -34,7 +34,8 @@ AddBuddy.ui       ConfInvitation.ui    IncomingFileTransfer.ui  ProxyAuth.ui\
 AddedMessage.ui   ConferenceWindow.ui  NewMail.ui               RemoveBuddy.ui\
 ChatWindow.ui     OfflineMsg.ui            Setup.ui\
 ConfAddInvite.ui  OfflinesView.ui          StartChat.ui\
-BuddyList.ui emoticon.cpp
+BuddyList.ui emoticon.cpp \
+AddFriend.ui  AddFriendDialog.cpp
 
 # these are the headers for your project that won't be installed
 noinst_HEADERS = AddBuddyImpl.h		    AddedMessageImpl.h	 ChatBase.h\
@@ -47,7 +48,8 @@ Parse.h			    ProxyAuthImpl.h	 RemoveBuddyImpl.h\
 SetupImpl.h		    StartChatDialog.h\
 dialogs.h		    emoticons.h		 kyim.h\
 kyimicons.h		    process_packet.h	 statusIcons.h\
-utils.h IMState.h BuddyStatus.h emoticon.h
+utils.h IMState.h BuddyStatus.h emoticon.h \
+AddFriendDialog.h
 
 # let automoc handle all of the meta source files (moc)
 METASOURCES = AUTO 

@@ -45,6 +45,7 @@
 #include <qstringlist.h>
 #include <kiconloader.h>
 #include <krun.h>
+#include <kmessagebox.h>
 
 extern "C" {
 #include "yahoo2.h"
@@ -68,6 +69,8 @@ extern "C" {
 #include "kyimicons.h"
 
 #include "IMState.h"
+
+#include "AddFriendDialog.h"
 
 struct yahoo_context* context = NULL;
 
@@ -376,9 +379,27 @@ void KYahoo::slotAddUser()
   // don't do if not logged in
   if( !context )
     return;
-
-  AddBuddyImpl* dialog = new AddBuddyImpl(this);
-  dialog->show();
+    
+  AddFriendDialog* dlg = new AddFriendDialog( this );
+  dlg->setGroupList( imstate->Groups() );
+  if( dlg->exec() )
+  {
+    QString yahooId = dlg->yahooId();
+    QString groupName = dlg->groupName();
+    
+    if( yahooId.isEmpty() )
+    {
+      KMessageBox::sorry( 0, i18n("You don't enter a Yahoo! ID" ), i18n("Failed" ) );
+      return;
+    }
+    
+    if( groupName.isEmpty() ) groupName = "Friends";    
+    
+    imstate->AddNewBuddy( yahooId, groupName );
+    yahoo_add_buddy( context->id, yahooId.utf8(), groupName.utf8() );  
+  }
+  
+  delete dlg;
 }
 
 void KYahoo::slotRemoveUser()
