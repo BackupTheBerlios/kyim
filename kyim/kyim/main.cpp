@@ -241,15 +241,15 @@ KYahoo::KYahoo() :
   yahoomenu->insertItem( i18n("&Send Offline Message"), this, 
 			 SLOT( slotOffLineMsg() ), 
 			 0, ID_YAHOO_OFFLINE_MSG );
-  yahoomenu->insertItem( i18n("&Add User"), this, SLOT( slotAddUser() ),
+  yahoomenu->insertItem( i18n("&Add Friend"), this, SLOT( slotAddUser() ),
 			 0, ID_YAHOO_ADD_USER );
-  yahoomenu->insertItem( i18n("&Remove User"), this, 
+  yahoomenu->insertItem( i18n("&Remove Friend"), this, 
 			 SLOT( slotRemoveUser() ),
 			 0, ID_YAHOO_REMOVE_USER );
 			
   kyimtoolbar=toolBar();
   kyimtoolbar->insertButton(QPixmap(startchat_xpm),1,SIGNAL(clicked(int)), this, SLOT(slotNewChat()), true, i18n("Chat"));
-  kyimtoolbar->insertButton(QPixmap(addfriends_xpm),2,SIGNAL(clicked(int)), this, SLOT(slotAddUser()), true, i18n("Add User"));
+  kyimtoolbar->insertButton(QPixmap(addfriends_xpm),2,SIGNAL(clicked(int)), this, SLOT(slotAddUser()), true, i18n("Add Friend"));
   kyimtoolbar->insertButton(QPixmap(findfriends_xpm),3,SIGNAL(clicked(int)), this, SLOT(slotFindFriends()), true, i18n("Find Friends"));
   kyimtoolbar->insertButton(QPixmap(mail_empty_xpm),4,SIGNAL(clicked(int)), this, SLOT(slotGoToMail()), true, i18n("Go To Mail"));
   kyimtoolbar->enableMoving(false);
