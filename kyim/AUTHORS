@@ -1,35 +1,12 @@
-Jay Lubomirski <jaylubo@fiam.net>
-- Original Development
+Original author: Jay Lubomirski <jaylubo@fiam.net>
+Current Maintainer: Ariya Hidayat <ariya@kde.org>
 
-Frank Dekervel <Frank.dekervel@student.kuleuven.ac.Be>
-- Buzz sound and bugfixes
-- Status Icons
-- Incoming File Transfer implementation
-
+Contributors:
+Frank Dekervel <Frank.dekervel@student.kuleuven.ac.be>
 Haris Fauzi <haris@trustix.com>
-- emoticons in chat windows
-
 Praveen Karadakal <praveenkv@mindtree.com>
-- Proxy Authentication support
-
 Alexandre Aufrere <Alexandre.Aufrere@free.fr>
-- New Status Icons
-- Various UI improvments (toolbar, mail popup, mail button, ...)
-- New build system
-- various bugfixes
-- Internationalization & French translation
-
 Ankit Jain <radical@corewars.org>
-- Support for new Emoticons (popup menu)
-- Fixed parsing and sending of offline messages
-- New offline messages window
-- Fixed incoming file message handling
-
 Ankur Consul <ankz_c@hotmail.com>
-- 24 new Emoticons (artwork)
-
-Ariya Hidayat <ariya@kde.org>
-- KDE standardization
-- Style and usability enhancements
 
 
